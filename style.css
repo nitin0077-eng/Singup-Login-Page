@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #81f891, #6655e8);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+
+
+
+
+
+
+
+}
+
+.container {
+    margin-top: 100px;
+    background: white;
+    width: 50vw;
+    max-width: 400px;
+    padding: 3%;
+
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.headline {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px;
+    border-radius: 10px;
+    border: 1px solid #ccc
+}
+
+.button {
+    margin-top: 20px;
+
+
+
+}
+
+button {
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #171f17;
+}
+
+span {
+    color: red;
+    font-size: 17px;
+    margin-left: 2px;
+    font: weight 700px;
+
+}
+
+.icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+
+
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+.icon img {
+    border: 1px solid yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.sign span {
+    color: #007BFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign span:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.wrapper {
+    perspective: 1000px;
+    width: 400px;
+    height: 350px;
+}
+
+.container {
+
+    position: relative;
+    transition: transform .6s ease-in-out;
+    /* animation-delay: 5s;  */
+    /* transform-style: preserve-3d;  */
+    backface-visibility: hidden;
+
+}
+
+
+
+
+#login-container {
+    transform: rotateY(0deg);
+}
+
+#signup-container {
+    transform: rotateY(360deg);
+}
+
+.flipped #login-container {
+    transform: rotateY(-360deg);
+}
+
+.flipped #signup-container {
+    transform: rotateY(0deg);
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headline {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .icon img {
+        width: 25px;
+        height: 25px;
+    }
+}

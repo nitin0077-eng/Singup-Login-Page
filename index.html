@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login/signup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+    <div id="login-container" class="container">
+      <div class="headline">
+        <h2>Login</h2>
+      </div>
+      <div>
+        <input type="text" placeholder="username or email" />
+        <input type="password" placeholder="password" />
+        <a href="#">Forget Password</a>
+      </div>
+      <div class="button">
+        <button>Login</button>
+      </div>
+      <div class="icon">
+        <a href=""><img src="3.png" alt="" /></a>
+        <a href=""><img src="2.png" alt="" /></a>
+        <a href=""><img src="4.png" alt="" /></a>
+        <a href=""><img src="5.png" alt="" /></a>
+      </div>
+      <div class="sign">
+        <h5>Not a member? <span onclick="showSignUp()">Sign Up</span></h5>
+      </div>
+    </div>
+
+    <div id="signup-container" class="container" style="display: none">
+      <div class="headline">
+        <h2>Sign Up</h2>
+      </div>
+      <div>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="email-id" />
+        <input type="password" placeholder="Set password" />
+      </div>
+      <div class="button">
+        <button>Sign Up</button>
+      </div>
+      <div class="icon">
+        <a href=""><img src="3.png" alt="" /></a>
+        <a href=""><img src="2.png" alt="" /></a>
+        <a href=""><img src="4.png" alt="" /></a>
+        <a href=""><img src="5.png" alt="" /></a>
+      </div>
+      <div class="sign">
+        <h5>Already a member? <span onclick="showLogin()">Login</span></h5>
+      </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
